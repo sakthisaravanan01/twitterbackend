@@ -18,20 +18,6 @@ function generateEmailToken():string{
 //say expire in 10 min
 
 
-function generateAuthToken(tokenId:number):string{
-    const jwtpayload={tokenId};
-    // return jwt.sign(jwtPayload,JWT_SECRET,{
-    //     algorithm:"HS256",
-    //     noTimeStamp:true
-    // })
-    return jwt.sign(jwtpayload,JWT_SECRET,{
-        algorithm:'HS256',
-        noTimestamp:true
-    })
-
-
-
-}
 
 //CREATE A User if it doesn't exist
 //generate the emailToken aand sent it to their email
